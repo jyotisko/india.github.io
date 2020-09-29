@@ -15,6 +15,8 @@
 
 body{
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
   background-repeat: no-repeat;
@@ -334,12 +336,3 @@ input{
     width: 60vw;
   }
 }
-
-/* @media only screen and (max-width: 1644px) {
-  .icon{
-    width: 50vw;
-  }
-  .menu{
-    width: 50vw;
-  }
-} */
