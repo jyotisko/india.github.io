@@ -1,0 +1,345 @@
+/* General */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+  letter-spacing: 60%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body{
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  animation: changeBackground 30s infinite linear;
+}
+
+@keyframes changeBackground{
+  0%{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('darjeeling.jpg');}
+  25%{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('agra.jpg');}
+  50%{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('kerela.jpg');}
+  75%{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('jaipur.jpg');}
+  100%{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('delhi.jpg');}
+}
+
+/* Nav Bar */
+
+nav{
+  text-shadow: 3px 3px 3px #000000;
+  height: 10vh;
+  width: 100vw;
+  color: white;
+  position: sticky;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .menu a{
+  font-size: 1.2em;
+}
+
+nav .menu a:active{
+  color: #5cff87;
+}
+
+#home{
+  color: #5cff87;
+}
+
+.icon_span{
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.icon{
+  width: 30vw;
+  /* width: 40vw; */
+  text-align: center;
+}
+
+.menu{
+  width: 40vw;
+  /* width: 60vw; */
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 1.7vw;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 4.3vw;
+}
+
+/* Home Section */
+
+.section1{
+  height: 90vh;
+  text-shadow: 3px 3px 3px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+main section div h3{
+  font-size: 3em;
+}
+
+main section div h1{
+  font-size: 5em;
+}
+
+main section div h4{
+  font-size: 1.7em;
+}
+
+main section div a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3em;
+  padding: 2.8% 10%;
+}
+
+.learn_more{
+  border: 4px solid rgb(200, 200, 200);
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 5%;
+  margin-right: 1vw;
+  -webkit-transition: background-color, color 800ms ease-in-out;
+  -moz-transition: background-color, color 800ms ease-in-out;
+  -o-transition: background-color, color 800ms ease-in-out;
+}
+
+.learn_more:hover{
+  border: 4px solid #556158;
+  color: #5cff87;
+  background-color: #556158;
+  border-radius: 5%;
+  margin-right: 1vw;
+}
+
+.sign_up{
+  border: 4px solid #000000;
+  background-color: transparent;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 200;
+  text-shadow: 0.7px 0.7px 1px #ffffff;
+  border-radius: 5%;
+  -webkit-transition: background-color, color 800ms ease-in-out;
+  -moz-transition: background-color, color 800ms ease-in-out;
+  -o-transition: background-color, color 800ms ease-in-out;
+}
+
+.sign_up:hover{
+  background-color: #000;
+  color: #fff;
+  text-shadow: 0.2px 0.2px #000000;
+  border: 4px solid black;
+  border-radius: 5%;
+}
+
+.change_content{
+  color: #5cff87;
+  padding-left: 10px;
+}
+
+.change_content::after{
+  content: '';
+  animation: changeText 30s infinite linear;
+}
+
+@keyframes changeText{
+  0%{
+    content:"Darjeeling";
+    letter-spacing: 1px;
+  }
+  25%{content:"Agra";
+  letter-spacing: 1px;
+  }
+  50%{content:"Kerela";
+  letter-spacing: 1px;
+  }
+  75%{content:"Jaipur";
+  letter-spacing: 1px;
+  }
+  100%{content:"Delhi";
+  letter-spacing: 1px;
+  }
+}
+
+
+.btns{
+    margin-top: 5vh;
+}
+
+/* Section 2 */
+
+.section2 .contact_us{
+  height: 100vh;
+  margin-top: 4vh;
+  width: 99vw;
+  display: flex;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px #000000;
+  text-shadow: #000000;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact_us_form{
+  padding: 2vh 2vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  float: left;
+  font-size: 4em;
+}
+
+.contact_us_text{
+  text-decoration: underline dotted #ff0000;
+  padding-bottom: 2em;
+}
+
+input{
+  font-size: 0.7em;
+  width: 97.5%;
+  font-weight: lighter;
+}
+
+input:focus{
+  outline-color: #5cff87;
+  font-weight: lighter;
+}
+
+.textarea{
+  font-size: 0.4em;
+  resize: none;
+}
+
+.textarea:focus{
+  outline-color: #5cff87;
+}
+
+
+.submit_btn{
+  padding-top: 0.4%;
+  margin-top: 3%;
+  cursor: pointer;
+  font-size: 0.7em;
+  border-radius: 5%;
+  color: #ffffff;
+  border: 4px solid #5cff87;
+  background-color: transparent;
+  -webkit-transition: background-color, color, border 600ms ease-in-out;
+  -moz-transition: background-color, color, border 600ms ease-in-out;
+  -o-transition: background-color, color, border 600ms ease-in-out;
+}
+
+.submit_btn:hover{
+  padding-top: 0.4%;
+  margin-top: 3%;
+  font-size: 0.7em;
+  border-radius: 5%;
+  color: #5cff87;
+  border: 4px solid #556158;
+  background-color: #556158;
+}
+
+/* Section 3 */
+
+.section3{
+  position: absolute;
+  height: 100vh;
+  width: 93vw;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2em;
+  margin: 2em;
+  letter-spacing: 100%;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  line-height: 185%;
+  padding-bottom: 10vh;
+  margin-bottom: 4vh;
+}
+
+.about_text{
+  font-size: 2em;
+  text-shadow: 3px 3px #000000;
+  color: #ffffff;
+  text-decoration: underline dotted #ff0000;
+}
+
+
+.about_section{
+  
+  /* height: 100vh; */
+  width: 93vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 3vh 3vw;
+  margin-top: 110vh;
+  color: #d8e0ed;
+  margin-bottom: 7vh;
+  text-shadow: 0.3px 0.3px #000000;
+}
+
+#src_wiki{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  color: #ff0000;
+}
+
+input{
+  border-radius: 4%;
+}
+
+@media only screen and  (max-width: 1000px) {
+  .icon{
+    width: 40vw;
+  }
+  .menu{
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .icon{
+    width: 40vw;
+  }
+  .menu{
+    width: 60vw;
+  }
+}
+
+/* @media only screen and (max-width: 1644px) {
+  .icon{
+    width: 50vw;
+  }
+  .menu{
+    width: 50vw;
+  }
+} */
