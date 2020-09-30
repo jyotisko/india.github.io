@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sansita Swashed', cursive;
+    overflow: hidden;
+}
+
+body{
+    font-size: 2.5em;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e6efff;
+    color: #525252;
+}
+
+.image-conatiner{
+    background: #f5f8ff;
+    border-radius: 5px;
+    padding: 0.4em;
+}
+
+.img{
+    padding-top: 0.2em;
+    margin: 0.3em;
+}
+
+caption span{
+    color: #ffffff;
+}
+
+.icon-container i{
+    margin-top: 0.35em;
+    margin-bottom: 0.1em;
+}
+
+.icon-left,
+.icon-right{
+    margin: 0 1em;
+    cursor: pointer;
+}
